@@ -56,7 +56,6 @@ export default function App() {
   return (
     <DraggableFlatList
       data={data}
-      scrollEnabled={false}
       onDragEnd={({data}) => setData(data)}
       keyExtractor={item => item.key}
       renderItem={renderItem}
